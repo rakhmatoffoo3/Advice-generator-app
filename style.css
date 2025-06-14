@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+
+  .card {
+    background-color: hsl(217, 19%, 24%);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  .advice-id {
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  blockquote {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+
+  .divider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .dice {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .dice:hover {
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+
+  @media (max-width: 480px) {
+    .card {
+      padding: 30px 20px;
+      max-width: 90%;
+    }
+  
+    blockquote {
+      font-size: 20px;
+    }
+  
+    .divider {
+      content: url("./images/pattern-divider-mobile.svg");
+    }
+  
+    .dice {
+      width: 50px;
+      height: 50px;
+      bottom: -25px;
+    }
+  
+    .dice img {
+      width: 20px;
+      height: 20px;
+    }
+  }
